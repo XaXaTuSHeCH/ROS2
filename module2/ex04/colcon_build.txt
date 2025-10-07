@@ -1,0 +1,35 @@
+root@0f55584a0ef0:~/ros2_ws/src# ros2 pkg create --build-type ament_python --license Apache-2.0 --node-name my_node my_package
+going to create a new package
+package name: my_package
+destination directory: /root/ros2_ws/src
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: ['root <eg03or@mail.ru>']
+licenses: ['Apache-2.0']
+build type: ament_python
+dependencies: []
+node_name: my_node
+creating folder ./my_package
+creating ./my_package/package.xml
+creating source folder
+creating folder ./my_package/my_package
+creating ./my_package/setup.py
+creating ./my_package/setup.cfg
+creating folder ./my_package/resource
+creating ./my_package/resource/my_package
+creating ./my_package/my_package/__init__.py
+creating folder ./my_package/test
+creating ./my_package/test/test_copyright.py
+creating ./my_package/test/test_flake8.py
+creating ./my_package/test/test_pep257.py
+creating ./my_package/my_package/my_node.py
+root@0f55584a0ef0:~/ros2_ws/src# cd ~/ros2_ws
+root@0f55584a0ef0:~/ros2_ws# colcon build --packages-select my_package
+Starting >>> my_package
+Finished <<< my_package [1.40s]          
+
+Summary: 1 package finished [1.55s]
+root@0f55584a0ef0:~/ros2_ws# source install/local_setup.bash
+root@0f55584a0ef0:~/ros2_ws# ros2 run my_package my_node
+Hi from my_package.
