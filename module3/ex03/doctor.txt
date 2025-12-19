@@ -1,0 +1,31 @@
+   PLATFORM INFORMATION
+system           : Linux
+platform info    : Linux-6.12.54-linuxkit-x86_64-with-glibc2.39
+release          : 6.12.54-linuxkit
+processor        : x86_64
+
+   RMW MIDDLEWARE
+middleware name    : rmw_fastrtps_cpp
+
+   ROS 2 INFORMATION
+distribution name      : jazzy
+distribution type      : ros2
+distribution status    : active
+release platforms      : {'debian': ['bookworm'], 'rhel': ['9'], 'ubuntu': ['noble']}
+
+   TOPIC LIST
+topic               : /turtle1/cmd_vel
+publisher count     : 0
+subscriber count    : 0
+topic               : /turtle1/color_sensor
+publisher count     : 0
+subscriber count    : 0
+topic               : /turtle1/pose
+publisher count     : 0
+subscriber count    : 0
+topic               : /turtle1/rotate_absolute/_action/feedback
+publisher count     : 0
+subscriber count    : 0
+topic               : /turtle1/rotate_absolute/_action/status
+publisher count     : 0
+subscriber count    : 0

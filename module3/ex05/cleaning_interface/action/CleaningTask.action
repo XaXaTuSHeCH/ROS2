@@ -1,0 +1,16 @@
+# goal definition
+string task_type	# "clean_square", "clean_circle", "return_home"
+float64 area_size	# размер области для уборки (сторона квадрата или радиус круга)
+float64 target_x	# целевая координата X (только для return_home)
+float64 target_y	# целевая координата Y (только для return_home)
+---
+# result definition
+bool success		# true - задача выполнена успешно, false - не удалось выполнить
+int32 cleaned_points	# количество "убранных" точек
+float64 total_distance	# общее пройденное расстояние
+---
+# feedback
+int32 progress_percent		# процент выполнения задачи (0-100)
+int32 current_cleaned_points	# текущее количество убранных точек
+float64 current_x			# текущая позиция X
+float64 current_y			# текущая позиция Y
